@@ -11,7 +11,7 @@ This is a developer preview and not ready for production yet. A lot of work stil
 
 We currently require our ecosystem dependencies from GitHub but we'll create a npm registry for the alpha version.
 
-Documentation will come soon. In the meantime, you can access the official Sails documentation is here: [http://sailsjs.org/#/documentation](http://sailsjs.org/#/documentation).
+Documentation will come soon. In the meantime, you can access the official Sails documentation here: [http://sailsjs.org/#/documentation](http://sailsjs.org/#/documentation).
 
 
 ## Getting started

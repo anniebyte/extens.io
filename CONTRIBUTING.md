@@ -1,13 +1,5 @@
 # Contributing
 
-## Issues
-
-We decided to close issues on GitHub for two reasons:
-
-1. Too many developers think GitHub issues is a forum or is StackOverflow.
-2. Our ecosystem is build around so many repositories, it would be a complete mess to keep it open.
-
-
 ## Pull requests
 
 ### Introducing pull requests
