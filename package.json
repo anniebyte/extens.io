@@ -1,0 +1,71 @@
+{
+  "name": "extens.io",
+  "version": "0.11.0",
+  "description": "Open-source governance Node.js ecosystem to build a new kind of realtime web applications.",
+  "homepage": "http://extens.io",
+  "keywords": [
+    "ecosystem",
+    "framework",
+    "mvc",
+    "sails",
+    "orm",
+    "waterline",
+    "rest",
+    "api",
+    "express",
+    "socket.io",
+    "grunt",
+    "bower"
+  ],
+  "main": "./lib/index.js",
+  "bin": {
+    "extens.io": "./bin/extensio.js"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "async": "~0.9.0",
+    "captains-log": "~0.11.11",
+    "commander": "~2.5.0",
+    "fs-extra": "~0.14.0",
+    "lodash": "~2.4.1",
+    "merge-defaults": "~0.2.1",
+    "node-uuid": "~1.4.2",
+    "q": "~1.1.2",
+    "reportback": "~0.1.8",
+    "sails": "git://github.com/extensdotio/sails.git#master",
+    "sails-admin": "git://github.com/extensdotio/sails-admin.git#master",
+    "sails-build-dictionary": "git://github.com/extensdotio/sails-build-dictionary.git#master",
+    "sails-generate": "git://github.com/extensdotio/sails-generate.git#master",
+    "sails-hooks": "git://github.com/extensdotio/sails-hooks.git#master",
+    "sails-mongo": "~0.10.5",
+    "sails-util": "~0.10.4",
+    "semver": "~4.1.0"
+  },
+  "author": {
+    "name": "Wistity team",
+    "email": "hack@wistity.co",
+    "url": "http://wistity.co"
+  },
+  "maintainers": [{
+    "name": "Balderdash team",
+    "email": "friends@balderdash.co",
+    "url": "http://balderdash.co"
+  }, {
+    "name": "Wistity team",
+    "email": "hack@wistity.co",
+    "url": "http://wistity.co"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/extensdotio/extens.io.git"
+  },
+  "engines": {
+    "node": ">= 0.10.35",
+    "npm": ">= 2.1.0"
+  },
+  "preferGlobal": true,
+  "license": "MIT"
+}
