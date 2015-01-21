@@ -19,7 +19,8 @@
   ],
   "main": "./lib/index.js",
   "bin": {
-    "extens.io": "./bin/extensio.js"
+    "extens.io": "./bin/extensio.js",
+    "extensio": "./bin/extensio.js"
   },
   "directories": {
     "bin": "./bin",
