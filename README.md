@@ -14,15 +14,39 @@ We currently require our ecosystem dependencies from GitHub but we'll create a n
 Documentation will come soon. In the meantime, you can access the official Sails documentation here: [http://sailsjs.org/#/documentation](http://sailsjs.org/#/documentation).
 
 
+## Requirements
+
+- [Node.js](http://nodejs.org/): >= 0.10.35
+- [npm](https://www.npmjs.com/): >= 2.1.0
+- [MongoDB](http://www.mongodb.org/): >= 2.5.0
+
+
 ## Getting started
+
+### npm cache
+
+If you already installed a previous version of extens.io, please do:
+
+```bash
+$ [sudo] npm uninstall extens.io -g
+$ [sudo] npm cache clear
+```
+
 
 ### Basics
 
-You can install the whole ecosystem simply by running:
+You can install the whole ecosystem simply by running (do not run the installation with `sudo`):
 
 ```bash
 $ npm install extens.io -g
 ```
+
+Before doing anything else, please make sure you have a MongoDB process running:
+
+```bash
+$ mongod
+```
+
 
 Create and lift your first application with:
 
@@ -35,7 +59,7 @@ $ extens.io lift
 You can access your admin dashboard at [http://localhost:1337/sails-admin/](http://localhost:1337/sails-admin/).
 
 
-### Cool command lines
+### Useful command lines
 
 Access the Sails console with:
 
@@ -63,6 +87,7 @@ We owe huge gratitude and props to the authors of all the open-source projects w
 ## Resources
 
 - [F.A.Q.](FAQ.md)
+- [Changelog](CHANGELOG.md)
 - [Roadmap](ROADMAP.md)
 - [Contributing guide](CONTRIBUTING.md)
 - [MIT License](LICENSE.md)
