@@ -33,7 +33,7 @@ module.exports = function () {
   // Pass the original CLI arguments down to the generator.
   var cliArguments = Array.prototype.slice.call(arguments);
 
-  // Build initial scope and load the admin "hook".
+  // Build initial scope.
   scope = {
     rootPath: process.cwd(),
     sailsRoot: path.resolve(__dirname, '..'),
