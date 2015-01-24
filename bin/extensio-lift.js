@@ -31,8 +31,7 @@ module.exports = function () {
 
   log.info('Starting the application...');
 
-  // Build initial scope, mixing-in `rc` config and
-  // load the admin "hook".
+  // Build initial scope, mixing-in `rc` config.
   var scope = _.merge({
     rootPath: process.cwd(),
     sailsPackageJSON: package
