@@ -39,6 +39,13 @@ Where there is no disagreement amongst Collaborators, a pull request may be land
 
 The extens.io project has an open governance model and welcomes new contributors. Individuals making significant and valuable contributions are made Collaborators and given commit-access to the project.
 
+Since extens.io is build around a lot of modules, it can be pretty difficult to contribute to the extens.io ecosystem. That's why we created some Gists to make the process simple:
+
+- [Clone and link every repositories](https://gist.github.com/loicsaintroch/839266a586d91997c081): this alias clones the main repository, links it to your global node modules and clones sub modules inside it. Then, you will be able to directly work inside your global extens.io node module.
+- [Update locally every repositories](https://gist.github.com/loicsaintroch/e9b20f0ac69fc680dbfb): this alias is pretty convenient to reset your current branch, checkout and pull the `development` branch.
+
+If someone has a better way to do it, please let us know!
+
 Adhering to the following process is the best way to get your work included in the project:
 
 1. [Fork](http://help.github.com/fork-a-repo/) the project, clone the `development` branch, and configure the remotes:

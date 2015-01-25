@@ -1,5 +1,10 @@
 # Open-source governance
 
+## What is open-source governance?
+
+Open source-governance advocates the application of the philosophies of the open source and open content movements in order to enable any interested party to add to the creation of the end product, as with a wiki document. Legislation is democratically opened to the general citizenry, employing their collective wisdom to benefit the decision-making process and improve democracy.
+
+
 ## Technical Committee
 
 The extens.io project is jointly governed by a Technical Committee (TC) which is responsible for high-level guidance of the project.
