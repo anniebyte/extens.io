@@ -7,23 +7,6 @@ extens.io is an open-source governance Node.js ecosystem to make a new kind of r
 Sails is the framework. Built on top of the Sails framework using the extens.io ecosystem means your application requires Sails and you trust extens.io to give you more features, hooks, updates, etc.
 
 
-## How can I install the ecosystem?
-
-You can install the whole ecosystem simply by running:
-
-```bash
-$ npm install extens.io -g
-```
-
-Create and lift your first application with:
-
-```bash
-$ extens.io new myApp [--no-frontend]
-$ cd myApp
-$ extens.io lift
-```
-
-
 ## Why did you fork Sails?
 
 We forked Sails for several reasons.
