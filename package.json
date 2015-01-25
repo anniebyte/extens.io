@@ -1,9 +1,10 @@
 {
   "name": "extens.io",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "description": "Open-source governance Node.js ecosystem to build a new kind of realtime web applications.",
   "homepage": "http://extens.io",
   "keywords": [
+    "cms",
     "ecosystem",
     "framework",
     "mvc",
