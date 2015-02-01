@@ -33,7 +33,7 @@ module.exports = function () {
     pathToSails = path.resolve(__dirname, './extensio.js');
   }
 
-  log.info('Running the Sails application in debug mode...');
+  log.info('Running the application in debug mode...');
 
   // Check whether `node-inspector` is running.
   Womb.exec('ps', function (error, stdout, stderr) {

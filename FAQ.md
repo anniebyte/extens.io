@@ -52,15 +52,3 @@ We decided to not support CoffeeScript, LitCoffee and other Coffee technologies 
 
 - The whole ecosystem is written in JavaScript as your generated applications. We disabled it aiming to keep everything clean and consistant.
 - If one day we decide to support Coffee technologies, every developers will ask for Coffee generators and it's a lot of work we don't want to take care of (for now).
-
-
-## Why did you choose Grunt and Bower for the front-end workflow?
-
-A lot of front-end technologies such as Gulp, Broccoli, Duo, etc. are really great but still young.
-
-The pros using Grunt and Bower are the stability and the community. We don't want to change technologies every week. We want something serious, heavy, stable. We just selected the most popular and the best ones that fit our workflow.
-
-
-## Why my applications have Foundation by default?
-
-Scaffolding is great and it is even better when you have absolutely nothing to do. We had to choose a default front-end framework. The deal was simple: Bootstrap or Foundation? Since the mobile is more and more popular, we had a preference for Foundation. We also asked a few front-end developers which one they prefer and the answer was Foundation as well.

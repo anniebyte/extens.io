@@ -29,7 +29,7 @@ var package = require('../package.json');
 
 module.exports = function () {
 
-  log.info('Starting the application...');
+  log.info('Starting the server...');
 
   // Build initial scope, mixing-in `rc` config.
   var scope = _.merge({

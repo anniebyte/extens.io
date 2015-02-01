@@ -60,7 +60,7 @@ List of new features we'll be working on soon:
     * Cross data between different models
 
 
-* **v0.19.0** (alpha version)
+* **v0.19.0**
   * API manager
 
 
@@ -72,15 +72,10 @@ List of new features we'll be working on soon:
   * Powerful media management
 
 
-* **v0.22.0** (beta version)
-  * Add other template engines for the front-office
-
-
 # Wishlist
 
 * ArangoDB adapter (we are in love, we really need this stuff)
 * Monitoring dashboard with pm2
-* Ionic generator
 
 [Feel free to help us on making the ecosystem better everyday.](CONTRIBUTING.md)
 
@@ -96,7 +91,6 @@ List of technical improvements we can make on the ecosystem:
 * Get rid of `sails-util`.
 * Merge `sails-generate-controller`, `sails-generate-controller-module` and `sails-generate-controller-template` into one generator (`sails-generate-controller`). **Owner**: [@loicsaintroch](https://github.com/loicsaintroch)
 * Merge `sails-generate-model`, `sails-generate-model-module` and `sails-generate-model-template` into one generator (`sails-generate-model`). **Owner**: [@loicsaintroch](https://github.com/loicsaintroch)
-* Improve `sails-hook-views` for layouts support. We also can simplify the hook.
 * `sails-hook-machines` should work even if there is no `./api/machines` directory. **Owner**: [@loicsaintroch](https://github.com/loicsaintroch)
 
 If you are feeling pretty confident helping us, please make a pull request and add you as `owner` of the improvement or create a new one. We'll discuss on the subject and if the community agrees we'll merge your proposal and let you write your pull request on the desired repositories.
