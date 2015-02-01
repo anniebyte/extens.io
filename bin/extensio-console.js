@@ -29,7 +29,7 @@ var Err = require('sails/errors');
 
 module.exports = function () {
 
-  log.info('Starting the Sails application in interactive mode...');
+  log.info('Starting the application in interactive mode...');
 
   // Now load up the Sails framework for real.
   var sails = Sails();
