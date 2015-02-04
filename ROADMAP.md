@@ -84,7 +84,6 @@ List of new features we'll be working on soon:
 
 List of technical improvements we can make on the ecosystem:
 
-* Better connections management between the application and the modules (`sails-hook-userfeatures`).
 * Update tests to make them work (`sails`, `sails-generate`, `sails-hook-cors`, `sails-hook-csrf`, `sails-hook-i18n`, `sails-hook-policies`, `sails-hook-pubsub`, `sails-hook-request`, `sails-hook-sockets`, `sails-hook-userconfig` and `sails-hook-views`). **Owner**: [@loicsaintroch](https://github.com/loicsaintroch)
 * Write tests for every hooks without tests.
 * Continuous Integration with Travis.

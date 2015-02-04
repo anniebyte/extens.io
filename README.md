@@ -20,7 +20,6 @@ Documentation will come soon. In the meantime, you can access the official Sails
 
 - [Node.js](http://nodejs.org/): >= 0.10.35
 - [npm](https://www.npmjs.com/): >= 2.1.0
-- [MongoDB](http://www.mongodb.org/): >= 2.5.0
 
 
 ## Getting started
@@ -31,12 +30,6 @@ You can install the whole ecosystem simply by running (do not run the installati
 
 ```bash
 $ npm install extens.io -g
-```
-
-Before doing anything else, please make sure you have a MongoDB process running:
-
-```bash
-$ mongod
 ```
 
 Create and lift your first application with:

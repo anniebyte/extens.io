@@ -29,16 +29,6 @@ The extens.io ecosystem gives you control on your application as much as a frame
 We also provide a powerful admin dashboard to manage your data through modules and a powerful data explorer. You can manage all of your settings, users, APIs, etc. In other words, the admin panel allows you to completely manage your application with an UI.
 
 
-## Are my Sails applications compatible with your fork?
-
-Your applications running on top of the original Sails project will work unless if:
-
-- You use CoffeeScript, LiteScript, or whatever the Coffee.
-- You use the `blueprints` and `userhooks` hooks.
-
-We are pretty sure that's all. Then, be careful with your front-end workflow (tasks and paths) and `config` directory.
-
-
 ## Why do you think API first?
 
 Data is everywhere. Data is important. Data is valuable. Data is reusable.
