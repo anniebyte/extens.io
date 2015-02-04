@@ -61,7 +61,7 @@ module.exports = function () {
     }
 
     if (invalidPackageJSON) {
-      return log.error('Sorry, this command can only be used in the root directory of a Sails project.');
+      return log.error('Sorry, this command can only be used in the root directory of an extens.io project.');
     }
   }
 

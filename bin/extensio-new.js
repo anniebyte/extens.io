@@ -40,19 +40,8 @@ module.exports = function () {
     generatorType: 'new',
     args: cliArguments,
     sailsPackageJSON: package,
-    viewEngine: rconf.viewEngine,
     modules: {}
   };
-
-  // Support `--template` option for backwards-compatibility.
-  if (!scope.viewEngine && rconf.template) {
-    scope.viewEngine = rconf.template;
-  }
-
-  // Use `ejs` if no template engine specified.
-  if (!scope.viewEngine) {
-    scope.viewEngine = scope.args[1]['template'] || 'ejs';
-  }
 
   // Mix-in rconf.
   _.merge(scope, rconf.generators);

@@ -29,16 +29,6 @@ The extens.io ecosystem gives you control on your application as much as a frame
 We also provide a powerful admin dashboard to manage your data through modules and a powerful data explorer. You can manage all of your settings, users, APIs, etc. In other words, the admin panel allows you to completely manage your application with an UI.
 
 
-## Are my Sails applications compatible with your fork?
-
-Your applications running on top of the original Sails project will work unless if:
-
-- You use CoffeeScript, LiteScript, or whatever the Coffee.
-- You use the `blueprints` and `userhooks` hooks.
-
-We are pretty sure that's all. Then, be careful with your front-end workflow (tasks and paths) and `config` directory.
-
-
 ## Why do you think API first?
 
 Data is everywhere. Data is important. Data is valuable. Data is reusable.
@@ -52,15 +42,3 @@ We decided to not support CoffeeScript, LitCoffee and other Coffee technologies 
 
 - The whole ecosystem is written in JavaScript as your generated applications. We disabled it aiming to keep everything clean and consistant.
 - If one day we decide to support Coffee technologies, every developers will ask for Coffee generators and it's a lot of work we don't want to take care of (for now).
-
-
-## Why did you choose Grunt and Bower for the front-end workflow?
-
-A lot of front-end technologies such as Gulp, Broccoli, Duo, etc. are really great but still young.
-
-The pros using Grunt and Bower are the stability and the community. We don't want to change technologies every week. We want something serious, heavy, stable. We just selected the most popular and the best ones that fit our workflow.
-
-
-## Why my applications have Foundation by default?
-
-Scaffolding is great and it is even better when you have absolutely nothing to do. We had to choose a default front-end framework. The deal was simple: Bootstrap or Foundation? Since the mobile is more and more popular, we had a preference for Foundation. We also asked a few front-end developers which one they prefer and the answer was Foundation as well.

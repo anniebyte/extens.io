@@ -3,6 +3,15 @@
 *Only notable changes are written.*
 
 
+## v0.11.3
+### 2015-02-04
+
+- **[IMPROVEMENT]** Use `sails-disk` by default. We don't need to have a MongoDB instance running anymore. By [@loicsaintroch](https://github.com/loicsaintroch).
+- **[FIX]** Fix connections when we create a module via the UI. No need to update its `connections` anymore. By [@loicsaintroch](https://github.com/loicsaintroch).
+- **[IMPROVEMENT]** Removed `sails-generate-adapter`, `sails-generate-hardwired` and `sails-generate-service` since we don't want developers to use them. By [@loicsaintroch](https://github.com/loicsaintroch).
+- **[IMPROVEMENT]** No front-end at all anymore. Removed `sails-hook-csrf`, `sails-hook-grunt`, `sails-generate-frontend` and `sails-generate-views-ejs`. By [@loicsaintroch](https://github.com/loicsaintroch).
+
+
 ## v0.11.2
 ### 2015-01-25
 

@@ -61,18 +61,15 @@ cmd.action(require('./extensio-lift'));
 
 // `$ extens.io new <name>`
 cmd = program.command('new [pathToNewApp]');
-cmd.usage('[pathToNewApp]');
-cmd.option('--no-frontend', 'generate a new Sails application without front-end');
-cmd.option('--viewEngine [viewEngine]', 'generate a new Sails application with a specific template engine');
-cmd.option('--template [viewEngine]', 'generate a new Sails application with a specific template engine');
 cmd.unknownOption = NOOP;
 cmd.description('create a new application ');
+cmd.usage('[pathToNewApp]');
 cmd.action(require('./extensio-new'));
 
 // `$ extens.io generate <generatorName>`
 cmd = program.command('generate');
 cmd.unknownOption = NOOP;
-cmd.description('generate something using the Sails CLI');
+cmd.description('generate something using the extens.io CLI');
 cmd.usage('[something] like `new`, `api`, `module`, `plugin`, etc.');
 cmd.action(require('./extensio-generate'));
 
@@ -81,12 +78,6 @@ cmd = program.command('console');
 cmd.unknownOption = NOOP;
 cmd.description('open the Sails console');
 cmd.action(require('./extensio-console'));
-
-// `$ extens.io www`
-cmd = program.command('www');
-cmd.unknownOption = NOOP;
-cmd.description('build assets for production');
-cmd.action(require('./extensio-www'));
 
 // `$ extens.io debug`
 cmd = program.command('debug');
