@@ -26,7 +26,7 @@ Documentation will come soon. In the meantime, you can access the official Sails
 
 ### Basics
 
-You can install the whole ecosystem simply by running (do not run the installation with `sudo`):
+You can install the whole ecosystem simply by running:
 
 ```bash
 $ npm install extens.io -g
@@ -35,14 +35,14 @@ $ npm install extens.io -g
 Create and lift your first application with:
 
 ```bash
-$ extens.io new myApp [--no-frontend]
+$ extens.io new myApp
 $ cd myApp
 $ extens.io lift
 ```
 
 Note: On Windows, you will probably need to run `$ extensio` instead of `$ extens.io`.
 
-You can access your admin dashboard at [http://localhost:1337/sails-admin/](http://localhost:1337/sails-admin/).
+You can access your admin dashboard at [http://localhost:1337/admin/](http://localhost:1337/admin/).
 
 
 ### Useful command lines
