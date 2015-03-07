@@ -18,7 +18,7 @@ Core modules maintained by the extens.io team:
     * [sails-generate-controller](https://github.com/extensdotio/sails-generate-controller) generates a controller in the `./api` directory.
     * [sails-generate-controller-module](https://github.com/extensdotio/sails-generate-controller-module) generates a controller for module.
     * [sails-generate-controller-template](https://github.com/extensdotio/sails-generate-controller-template) generates a controller for a specific template of a module.
-    * [sails-generate-infos](https://github.com/extensdotio/sails-generate-infos) generates some basic information files (dot files and Markdown). Automatically called by the `new` and `module` generators`.
+    * [sails-generate-infos](https://github.com/extensdotio/sails-generate-infos) generates some basic information files (dot files and Markdown). Automatically called by the `new` and `module` generators.
     * [sails-generate-model](https://github.com/extensdotio/sails-generate-model) generates a model in the `./api` directory.
     * [sails-generate-model-template](https://github.com/extensdotio/sails-generate-model-template) generates a model for a specific template of a module.
     * [sails-generate-module](https://github.com/extensdotio/sails-generate-module) generates a bootstrap module in the `./modules` directory.
