@@ -8,14 +8,8 @@
 // Node.js core.
 var path = require('path');
 
-// Public node modules.
-var _ = require('lodash');
-
 // Ecosystem dependencies.
 var generate = require('sails-generate');
-
-// Local Sails dependencies.
-var rconf = require('sails/lib/app/configuration/rc');
 
 // Local dependencies.
 var package = require('../package.json');
@@ -39,16 +33,8 @@ module.exports = function () {
     sailsRoot: path.resolve(__dirname, '..'),
     generatorType: 'new',
     args: cliArguments,
-    sailsPackageJSON: package,
-    modules: {}
+    sailsPackageJSON: package
   };
-
-  // Mix-in rconf.
-  _.merge(scope, rconf.generators);
-
-  // TODO: just do a top-level merge and reference
-  // `scope.generators.modules` as needed (simpler)
-  _.merge(scope, rconf);
 
   // Pass the original CLI arguments down to the generator
   // (but first, remove commander's extra argument)

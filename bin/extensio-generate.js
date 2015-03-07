@@ -10,15 +10,11 @@ var path = require('path');
 var util = require('util');
 
 // Public node modules.
-var _ = require('lodash');
-var log = require('captains-log')(rconf);
+var log = require('captains-log')();
 var reportback = require('reportback')();
 
 // Ecosystem dependencies.
 var generate = require('sails-generate');
-
-// Local Sails dependencies.
-var rconf = require('sails/lib/app/configuration/rc');
 
 // Local dependencies.
 var package = require('../package.json');
@@ -45,8 +41,7 @@ module.exports = function () {
     generatorType: cliArguments.shift(),
     generatorName: process.argv[2],
     args: cliArguments,
-    sailsPackageJSON: package,
-    modules: {}
+    sailsPackageJSON: package
   };
 
   // Check that we're in a valid Sails project.
@@ -64,13 +59,6 @@ module.exports = function () {
       return log.error('Sorry, this command can only be used in the root directory of an extens.io project.');
     }
   }
-
-  // Mix-in rc config.
-  _.merge(scope, rconf.generators);
-
-  // TODO: Just do a top-level merge and reference
-  // `scope.generators.modules` as needed (simpler).
-  _.merge(scope, rconf);
 
   // Create a new reportback.
   var cb = reportback.extend();
@@ -98,7 +86,7 @@ module.exports = function () {
     }
 
     if (scope.generatorType != 'new') {
-      log.info(util.format('Generated a new %s `%s` at `%s`', scope.generatorType, scope.humanizeId, scope.humanizedPath));
+      log.info(util.format('Generated a new %s `%s` at %s', scope.generatorType, scope.humanizeId, scope.humanizedPath));
     }
   };
 
