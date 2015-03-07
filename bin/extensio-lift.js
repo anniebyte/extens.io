@@ -9,12 +9,10 @@
 var path = require('path');
 
 // Public node modules.
-var _ = require('lodash');
 var log = require('captains-log')();
 
 // Local Sails dependencies.
 var Sails = require('sails/lib/app');
-var rconf = require('sails/lib/app/configuration/rc');
 
 // Local dependencies.
 var package = require('../package.json');
@@ -32,10 +30,10 @@ module.exports = function () {
   log.info('Starting the server...');
 
   // Build initial scope, mixing-in `rc` config.
-  var scope = _.merge({
+  var scope = {
     rootPath: process.cwd(),
     sailsPackageJSON: package
-  }, rconf);
+  };
 
   // Use the current directory as application path.
   var appPath = process.cwd();

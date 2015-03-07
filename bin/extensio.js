@@ -69,9 +69,16 @@ cmd.action(require('./extensio-new'));
 // `$ extens.io generate <generatorName>`
 cmd = program.command('generate');
 cmd.unknownOption = NOOP;
-cmd.description('generate something using the extens.io CLI');
+cmd.description('generate something');
 cmd.usage('[something] like `new`, `api`, `module`, `plugin`, etc.');
 cmd.action(require('./extensio-generate'));
+
+// `$ extens.io deploy <cloud>`
+cmd = program.command('deploy');
+cmd.unknownOption = NOOP;
+cmd.description('deploy your application in the cloud');
+cmd.usage('[somewhere] like `azure`');
+cmd.action(require('./extensio-deploy'));
 
 // `$ extens.io console`
 cmd = program.command('console');

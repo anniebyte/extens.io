@@ -39,6 +39,15 @@
     "sails-disk": "~0.10.7",
     "sails-util": "~0.10.4"
   },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "request": "~2.51.0",
+    "semver": "~4.1.0",
+    "wrench": "~1.5.8"
+  },
+  "scripts": {
+    "test": "mocha -b"
+  },
   "author": {
     "name": "Wistity team",
     "email": "hack@wistity.co",

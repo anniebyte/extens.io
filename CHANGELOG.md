@@ -3,32 +3,43 @@
 *Only notable changes are written.*
 
 
+## `development` branch
+
+- **[ENHANCEMENT]** Add the ability to generate custom models using `$ extens.io generate model <myModel> [attribute|attribute:type ...]`.
+- **[ENHANCEMENT]** Better default connections management when we generate a new module.
+- **[DEPRECATED]** Removed the `views` hook. We'll only focus on the back-end, we don't take care of the front-end at all anymore.
+- **[FEATURE]** You can generate a model using `$ extens.io generate model myModel attribute:type attribute:type`.
+- **[FIX]** Fix every generators from the CLI (we had an issue with a trivial function).
+- **[DEPRECATED]** Removed the `/config/settings.json` file. We can get those information from the `package.json`.
+- **[ENHANCEMENT]** The admin panel is now exposed at `sails.admin` and is mounted at `/admin`.
+- **[FEATURE]** Modules and plugins are now exposed at `sails.modules` and `sails.plugins`. Note: the Sails modules loaded from the `moduleloader` previously available at `sails.modules` are now exposed at `sails.moduleloader`.
+- **[DEPRECATED]** Removed the `rc` dependency and `rconf` features since we don't want developers to use lazy hardwired configuration.
+- **[DEPRECATED]** Removed the `logger` hook. It's not a feature like the other ones. Now implemented in the core.
+
+
 ## v0.11.3
 ### 2015-02-04
 
-- **[IMPROVEMENT]** Use `sails-disk` by default. We don't need to have a MongoDB instance running anymore. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[FIX]** Fix connections when we create a module via the UI. No need to update its `connections` anymore. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[IMPROVEMENT]** Removed `sails-generate-adapter`, `sails-generate-hardwired` and `sails-generate-service` since we don't want developers to use them. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[IMPROVEMENT]** No front-end at all anymore. Removed `sails-hook-csrf`, `sails-hook-grunt`, `sails-generate-frontend` and `sails-generate-views-ejs`. By [@loicsaintroch](https://github.com/loicsaintroch).
+- **[ENHANCEMENT]** Use `sails-disk` by default. You don't need to have a MongoDB instance running anymore.
+- **[FIX]** Fix connections when we create a module via the UI. No need to update its `connections` anymore.
+- **[DEPRECATED]** Removed `sails-generate-adapter`, `sails-generate-hardwired` and `sails-generate-service` because we don't want developers to use them.
+- **[DEPRECATED]** No front-end at all anymore. Removed `sails-hook-csrf`, `sails-hook-grunt`, `sails-generate-frontend` and `sails-generate-views-ejs`. Note: we just keep the `views` hook for a few days waiting for a few things to be stable.
 
 
 ## v0.11.2
 ### 2015-01-25
 
-- **[IMPROVEMENT]** Better open-source governance and contributing workflow. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[IMPROVEMENT]** Add some styles for notifications. By [@pierreburgy](https://github.com/pierreburgy).
-- **[FIX]** Remove duplicated JavaScript libraries in `sails-admin`. By [@pierreburgy](https://github.com/pierreburgy).
-- **[FEATURE]** Add a breadcrumb in the admin dashboard. By [@pierreburgy](https://github.com/pierreburgy).
-- **[FIX]** Fix views error pages in `sails-hook-responses`. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[IMPROVEMENT]** Add custom default views using the Foundation framework. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[IMPROVEMENT]** Better error logs in `sails-hook-responses`. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[IMPROVEMENT]** From AJAX to sockets in `sails-admin`. By [@pierreburgy](https://github.com/pierreburgy).
-- **[IMPROVEMENT]** Better logs when lifting an application. By [@loicsaintroch](https://github.com/loicsaintroch).
+- **[ENHANCEMENT]** Better open-source governance and contributing workflow.
+- **[FIX]** Remove duplicated JavaScript libraries in `sails-admin`.
+- **[FIX]** Fix views error pages in `sails-hook-responses`.
+- **[ENHANCEMENT]** Better error logs in `sails-hook-responses`.
+- **[ENHANCEMENT]** Moving from AJAX to sockets in `sails-admin`.
+- **[ENHANCEMENT]** Better logs when lifting an application.
 
 
 ## v0.11.1
 ### 2015-01-21
 
-- **[FIX]** Add `extensio` as a valid command to avoid conflicts on Windows. In fact, Windows thinks `extens.io` is a file since there is a dot. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[ENHANCEMENT]** Delete duplicated Sails dependencies. Remove the Sails dependencies and use relative paths to the node modules avoid useless deep dependencies and duplicated node modules. By [@loicsaintroch](https://github.com/loicsaintroch).
-- **[FIX]** Delete `grunt-browser-sync` dependency to avoid conflicts with Socket.IO and require useless deep dependencies. By [@loicsaintroch](https://github.com/loicsaintroch).
+- **[FIX]** Add `extensio` as a valid command to avoid conflicts on Windows. In fact, Windows thinks `extens.io` is a file since there is a dot.
+- **[ENHANCEMENT]** Delete duplicated Sails dependencies. Remove the Sails dependencies and use relative paths to the node modules avoid useless deep dependencies and duplicated node modules. Note: this will probably be fixed with npm v3.
+- **[FIX]** Delete `grunt-browser-sync` dependency to avoid conflicts with Socket.IO and require useless deep dependencies.

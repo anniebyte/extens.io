@@ -63,7 +63,6 @@ The extens.io project team comprises a group of core collaborators and a sub-gro
 - Aurélien Georget ([@aurelsicoko](https://github.com/aurelsicoko))
 - Jim Laurie ([@hack1337](https://github.com/hack1337))
 - Pierre Burgy ([@pierreburgy](https://github.com/pierreburgy))
-- Hugo Caillard ([@hugocaillard](https://github.com/hugocaillard))
 
 Collaborators should be familiar with the [guidelines](CONTRIBUTING.md) and also understand the project governance model as outlined in [the open governance document](GOVERNANCE.md).
 
@@ -77,6 +76,7 @@ We owe huge gratitude and props to the authors of all the open-source projects w
 - [Roadmap](ROADMAP.md)
 - [Contributing guide](CONTRIBUTING.md)
 - [Open governance](GOVERNANCE.md)
+- [Modules](MODULES.md)
 - [MIT License](LICENSE.md)
 
 

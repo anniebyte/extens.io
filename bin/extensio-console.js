@@ -16,7 +16,6 @@ var log = require('captains-log')();
 
 // Local Sails dependencies.
 var Sails = require('sails/lib/app');
-var rconf = require('sails/lib/app/configuration/rc');
 var Err = require('sails/errors');
 
 
@@ -33,7 +32,7 @@ module.exports = function () {
 
   // Now load up the Sails framework for real.
   var sails = Sails();
-  sails.lift(_.merge({}, rconf, {}), function (err) {
+  sails.lift(_.merge({}, {}), function (err) {
     if (err) {
       return Err.fatal.failedToLoadSails(err);
     }
