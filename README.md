@@ -1,8 +1,6 @@
 # extens.io
 
-extens.io is an open-source governance Node.js ecosystem to make a new kind of realtime web applications build on top of the Sails framework.
-
-Build on top of the Sails framework using the extens.io ecosystem means your application requires Sails and you trust extens.io to give you more features, hooks, updates, etc.
+extens.io is an open-source governance Node.js ecosystem to make a new kind of realtime web applications build on top of the Sails framework using the Waterline ORM.
 
 extens.io contributions, releases, and contributorship are under an open governance model. We intend to land, with increasing regularity, releases which are compatible with Sails and Waterline.
 
@@ -47,7 +45,7 @@ You can access your admin dashboard at [http://localhost:1337/admin/](http://loc
 
 ### Useful command lines
 
-Access the Sails console with:
+Access the Sails framework console with:
 
 ```bash
 $ cd myApp

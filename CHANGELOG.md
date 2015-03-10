@@ -5,10 +5,10 @@
 
 ## `development` branch
 
+- **[ENHANCEMENT]** Brand new admin dashboard on top of Bootstrap.
 - **[ENHANCEMENT]** Add the ability to generate custom models using `$ extens.io generate model <myModel> [attribute|attribute:type ...]`.
 - **[ENHANCEMENT]** Better default connections management when we generate a new module.
 - **[DEPRECATED]** Removed the `views` hook. We'll only focus on the back-end, we don't take care of the front-end at all anymore.
-- **[FEATURE]** You can generate a model using `$ extens.io generate model myModel attribute:type attribute:type`.
 - **[FIX]** Fix every generators from the CLI (we had an issue with a trivial function).
 - **[DEPRECATED]** Removed the `/config/settings.json` file. We can get those information from the `package.json`.
 - **[ENHANCEMENT]** The admin panel is now exposed at `sails.admin` and is mounted at `/admin`.
